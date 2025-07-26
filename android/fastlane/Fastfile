@@ -1,0 +1,23 @@
+
+default_platform(:android)
+
+platform :android do
+  desc "Lane to Test the Android application for Firebase App Distribution"
+  lane :firebase_distribution_test do
+    sh "flutter clean"
+    sh "flutter pub get"
+    sh "flutter build apk --release --no-tree-shake-icons"
+    
+    
+    firebase_app_distribution(
+      app: "1:811661006478:android:03b9b2e147ced17b905bdf",
+      firebase_cli_token: ENV["FAST_LANE_SECURE"],
+      android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
+      android_artifact_type: "APK",
+      testers: "aliizidan25@gmail.com",
+    
+      release_notes: "This is a test release for Firebase App Distribution",
+    )
+  end
+
+end
