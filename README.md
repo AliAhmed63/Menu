@@ -29,3 +29,39 @@ This is a basic restaurant mobile app built with Flutter and Firebase. The app i
 
 ## 📁 Project Structure
 
+lib/
+├── core/ # Constants, styles, and helper classes
+├── features/
+│ ├── auth/ # Login screen and auth logic
+│ ├── menu/ # Menu screen and Firestore service
+│ ├── cart/ # Cart page and logic
+├── models/ # Data models
+├── widgets/ # Reusable widgets
+main.dart
+yaml
+
+
+## 🚀 CI/CD (Bonus)
+
+This repo includes a basic GitHub Actions workflow for:
+- Flutter pub get
+- Build check
+- Analyze and test
+
+Path: `.github/workflows/flutter.yml`
+
+## 📽️ Demo Video
+
+A full demo with explanation:  
+👉 [Google Drive Video](https://drive.google.com/drive/folders/1HccXraCT1WYnWGhvXH9OuyaPsExi5YFc?usp=sharing)
+
+## 👨‍💻 Author
+
+**Ali Ahmed**  
+[GitHub Profile](https://github.com/AliAhmed63)
+
+---
+
+> Thank you for reviewing this task. Looking forward to your feedback.
+
+
