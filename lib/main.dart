@@ -33,7 +33,7 @@ class FireBaseLogin extends StatelessWidget {
         // BlocProvider<AuthCubit>(create: (_) => AuthCubit()), ← لو عندك حاجة تانية
       ],
       child: ScreenUtilInit(
-        designSize: const Size(390, 844),
+        designSize: const Size(391, 844),
         minTextAdapt: true,
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
